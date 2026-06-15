@@ -14,6 +14,15 @@ PostgreSQL (Docker) → Hevo Pipeline → Snowflake → dbt transformation
 - Snowflake trial account
 - dbt-snowflake installed
 
+## Environment Variables Required
+Set these in your terminal before running dbt:
+
+    export SNOWFLAKE_ACCOUNT="your_account"
+    export SNOWFLAKE_USER="your_user"
+    export SNOWFLAKE_PASSWORD="your_password"
+    export SNOWFLAKE_DATABASE="your_database"
+    export SNOWFLAKE_WAREHOUSE="your_warehouse"
+
 ## Setup Instructions
 
 ### 1. PostgreSQL Setup
