@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: hevo
+    database: HEVO_DB
+    schema: PUBLIC
+    tables:
+      - name: RAW_CUSTOMERS
+      - name: RAW_ORDERS
+      - name: RAW_PAYMENTS

@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: customers
+    description: "One record per customer with order and payment summary"
+    columns:
+      - name: customer_id
+        description: "Primary key"
+        tests:
+          - unique
+          - not_null
+      - name: first_name
+        tests:
+          - not_null
+      - name: first_order
+        description: "Date of first order"
+      - name: most_recent_order
+        description: "Date of most recent order"
+      - name: number_of_orders
+        description: "Count of orders per customer"
+      - name: customer_lifetime_value
+        description: "Sum of all payments by customer"
